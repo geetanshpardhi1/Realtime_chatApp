@@ -6,4 +6,8 @@ def index(request):
     return render(request,'myapp/index.html',{'chatrooms':chatrooms})
 
 
-def detail()
+def chatroom(request,slug):
+   
+        
+    chatroom = ChatRoom.objects.get(slug=slug)
+    return render(request,'myapp/room.html',{'chatroom':chatroom})
