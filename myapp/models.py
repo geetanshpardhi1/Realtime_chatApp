@@ -14,3 +14,4 @@ class ChatMessage(models.Model):
     
     class Meta:
         ordering = ('date',)
+        
